@@ -38,6 +38,16 @@ describe 'Sass'
     it 'should support complex selectors'
       assert('selectors')
     end
+
+    describe '@import ...'
+      it 'should inline referenced file'
+        assert('import', {locals: {
+          partial: function(file, options){ 
+            return sass.render(fixture(file), options); 
+          }
+        }})
+      end
+    end
     
     describe '// ...'
       it 'should be a sass-specific comment'

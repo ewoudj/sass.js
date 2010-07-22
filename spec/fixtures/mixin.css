@@ -6,3 +6,12 @@ table tr {
   font-size: 15px;}
 table tr:odd {
   background: #000;}
+
+table2 {
+  border: 1px;}
+table2 tr {
+  background: #fff;}
+table2 tr {
+  font-size: 15px;}
+table2 tr:odd {
+  background: #000;}
